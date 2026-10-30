@@ -1,0 +1,27 @@
+# lhs-erp-v7-help-doc-app - code, config, tools and docs are versioned.
+# Content (PDFs) and everything generated from it are NOT: they are rebuilt by webapp/tools/update_now.bat.
+
+# generated content (about 1 GB)
+webapp/docs/
+webapp/html/
+webapp/menu/v7-menu.json
+webapp/guide/*.pdf
+
+# build output and logs
+dist/
+webapp/tools/auto_update.log
+__pycache__/
+*.pyc
+
+# editors / OS
+.vscode/
+.idea/
+Thumbs.db
+Desktop.ini
+*.swp
+
+# never commit secrets (this project has none - keep it that way)
+*.pem
+*.key
+*.pfx
+.env

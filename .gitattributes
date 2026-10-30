@@ -1,0 +1,12 @@
+# normalise line endings; .bat files must stay CRLF on Windows
+* text=auto
+*.bat text eol=crlf
+*.ps1 text eol=crlf
+*.sh  text eol=lf
+
+# binary files - never diff / merge
+*.png  binary
+*.jpg  binary
+*.webp binary
+*.pdf  binary
+*.zip  binary

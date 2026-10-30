@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lighthouse ERP V7 Help Centre</title>
+  <link rel="icon" href="images/faq.png">
+  <script>
+    /* apply saved theme before first paint to avoid a flash */
+    (function () {
+      try {
+        var t = localStorage.getItem('lhs7.theme');
+        if (!t && window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches) t = 'dark';
+        if (t) document.documentElement.setAttribute('data-theme', t);
+      } catch (e) {}
+    })();
+  </script>
+  <link rel="stylesheet" href="css/app.css?v=7.0.32">
+</head>
+<body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></symbol>
+    <symbol id="i-keyboard" viewBox="0 0 24 24"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M6 10h.01M10 10h.01M14 10h.01M18 10h.01M7 14h10"/></symbol>
+    <symbol id="i-chev" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></symbol>
+    <symbol id="i-folder" viewBox="0 0 24 24"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></symbol>
+    <symbol id="i-file" viewBox="0 0 24 24"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></symbol>
+    <symbol id="i-filex" viewBox="0 0 24 24"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9.5 12.5l5 5M14.5 12.5l-5 5"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5-5.9-3.1-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></symbol>
+    <symbol id="i-ext" viewBox="0 0 24 24"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v12M7 10l5 5 5-5M4 20h16"/></symbol>
+    <symbol id="i-print" viewBox="0 0 24 24"><path d="M6 9V3h12v6M6 18H4a1 1 0 0 1-1-1v-6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v6a1 1 0 0 1-1 1h-2M7 14h10v7H7z"/></symbol>
+    <symbol id="i-link" viewBox="0 0 24 24"><path d="M10 13a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-1 1M14 11a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7l1-1"/></symbol>
+    <symbol id="i-left" viewBox="0 0 24 24"><path d="M19 12H5M11 6l-6 6 6 6"/></symbol>
+    <symbol id="i-right" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-book" viewBox="0 0 24 24"><path d="M2 5h7a3 3 0 0 1 3 3v12a2 2 0 0 0-2-2H2zM22 5h-7a3 3 0 0 0-3 3v12a2 2 0 0 1 2-2h8z"/></symbol>
+    <symbol id="i-grid" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></symbol>
+    <symbol id="i-bookmark" viewBox="0 0 24 24"><path d="M6 3h12v18l-6-4-6 4z"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="i-home" viewBox="0 0 24 24"><path d="M3 11l9-8 9 8M5 10v10h14V10"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></symbol>
+    <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></symbol>
+    <symbol id="i-alert" viewBox="0 0 24 24"><path d="M12 3l10 18H2zM12 10v5M12 18h.01"/></symbol>
+    <symbol id="i-layers" viewBox="0 0 24 24"><path d="M12 3l9 5-9 5-9-5zM3 13l9 5 9-5"/></symbol>
+    <symbol id="i-collapse" viewBox="0 0 24 24"><path d="M7 11l5-5 5 5M7 18l5-5 5 5"/></symbol>
+    <symbol id="i-locate" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4"/></symbol>
+    <symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 3l1.9 5.4L19.5 10l-5.6 1.7L12 17l-1.9-5.3L4.5 10l5.6-1.6zM19 16l.8 2.2L22 19l-2.2.8L19 22l-.8-2.2L16 19l2.2-.8z"/></symbol>
+    <symbol id="i-minus" viewBox="0 0 24 24"><path d="M5 12h14"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="i-fitw" viewBox="0 0 24 24"><path d="M4 5v14M20 5v14M8 12h8M8 12l2-2M8 12l2 2M16 12l-2-2M16 12l-2 2"/></symbol>
+    <symbol id="i-panel" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M9 4v16"/></symbol>
+  </svg>
+
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="topbar">
+    <button class="icon-btn" id="btnSidebar" aria-label="Toggle navigation" title="Toggle navigation  ( [ )"><svg><use href="#i-panel"/></svg></button>
+    <a class="brand" href="#home" id="brand" title="Help Centre home">
+      <img class="logo" src="images/lhs-icon.png" alt="Lighthouse">
+      <span class="brand-sep"></span>
+      <span class="brand-title">Lighthouse ERP Help Centre<small>Documentation &amp; user guides</small></span>
+    </a>
+
+    <div class="search" id="search" role="search">
+      <label class="search-box">
+        <svg><use href="#i-search"/></svg>
+        <input id="q" type="search" placeholder="Search documents, menu codes or modules…" autocomplete="off" spellcheck="false" aria-label="Search help" aria-controls="results" aria-expanded="false">
+        <kbd>Ctrl K</kbd>
+      </label>
+      <div class="results" id="results" role="listbox" hidden></div>
+    </div>
+
+    <div class="top-actions">
+      <button class="icon-btn" id="btnHome" aria-label="Home" title="Home"><svg><use href="#i-home"/></svg></button>
+      <button class="icon-btn" id="btnKeys" aria-label="Keyboard shortcuts" title="Keyboard shortcuts"><svg><use href="#i-keyboard"/></svg></button>
+      <button class="icon-btn" id="btnTheme" aria-label="Toggle dark mode" title="Light / dark theme"><svg><use href="#i-moon"/></svg></button>
+    </div>
+  </header>
+
+  <div class="shell">
+    <aside class="sidebar" id="sidebar" aria-label="Help navigation">
+      <div class="tabs" role="tablist" id="tabs">
+        <button class="tab" role="tab" data-view="modules" aria-selected="true" title="V7 modules, groups and documents"><svg><use href="#i-grid"/></svg>Modules</button>
+        <button class="tab" role="tab" data-view="guide" aria-selected="false" title="ERP overview, features, configuration &amp; support topics"><svg><use href="#i-book"/></svg>Guide</button>
+        <button class="tab" role="tab" data-view="saved" aria-selected="false" title="Favourites and recently viewed"><svg><use href="#i-bookmark"/></svg>Saved<span class="n" id="savedN" hidden></span></button>
+      </div>
+      <div class="tab-hint"><span class="vh"><b id="viewName">Modules</b> <span id="viewDesc"></span></span>
+        <span class="vt"><button class="mini-btn" id="btnCollapse" title="Collapse all folders" aria-label="Collapse all"><svg><use href="#i-collapse"/></svg></button><button class="mini-btn" id="btnLocate" title="Reveal the open document in the tree" aria-label="Locate open document"><svg><use href="#i-locate"/></svg></button></span>
+      </div>
+      <nav class="panel" id="panel" aria-live="polite"></nav>
+      <div class="sb-foot"><b class="sb-v7" title="Lighthouse ERP version 7">V7</b><span>&copy; <span id="yr"></span> <a href="http://www.lighthouseindia.com/" target="_blank" rel="noopener">Lighthouse Info Systems Pvt. Ltd.</a></span></div>
+    </aside>
+    <div class="resizer" id="resizer" title="Drag to resize"></div>
+    <div class="scrim" id="scrim"></div>
+
+    <main id="main" data-mode="home">
+      <div class="docbar" id="docbar">
+        <div class="crumbs" id="crumbs"></div>
+        <div class="titlerow">
+          <h1 class="doctitle" id="docTitle"></h1>
+          <div class="actions" id="actions">
+            <div class="aiwrap" id="aiWrap">
+              <button class="act ai" id="aAi" aria-haspopup="true" aria-expanded="false" title="Copy this page as clean Markdown, or open it in an AI assistant"><svg><use href="#i-spark"/></svg><span class="lbl">Copy page for AI</span><svg class="car"><use href="#i-chev"/></svg></button>
+              <div class="aimenu" id="aiMenu" role="menu" hidden>
+                <button role="menuitem" data-ai="copy"><svg><use href="#i-file"/></svg><span><b>Copy page for AI</b><small>Clean Markdown optimized for AI assistants</small></span></button>
+                <button role="menuitem" data-ai="chatgpt"><svg><use href="#i-spark"/></svg><span><b>Open in ChatGPT <svg class="x"><use href="#i-ext"/></svg></b><small>Ask questions about this page</small></span></button>
+                <button role="menuitem" data-ai="claude"><svg><use href="#i-spark"/></svg><span><b>Open in Claude <svg class="x"><use href="#i-ext"/></svg></b><small>Ask questions about this page</small></span></button>
+              </div>
+            </div>
+            <span class="vsep"></span>
+            <div class="seg" id="viewSeg" role="group" aria-label="Document view" title="Switch between the original PDF and the auto-formatted reader view">
+              <button data-v="pdf" aria-pressed="true">PDF</button><button data-v="reader" aria-pressed="false">Reader</button>
+            </div>
+            <span class="vsep"></span>
+            <button class="act icon" id="aPrev" title="Previous document" aria-label="Previous document"><svg><use href="#i-left"/></svg></button>
+            <button class="act icon" id="aNext" title="Next document" aria-label="Next document"><svg><use href="#i-right"/></svg></button>
+            <span class="vsep"></span>
+            <button class="act fav" id="aFav" aria-pressed="false" title="Save to favourites"><svg><use href="#i-star"/></svg><span class="lbl">Save</span></button>
+            <button class="act" id="aLink" title="Copy a shareable link to this page"><svg><use href="#i-link"/></svg><span class="lbl">Copy link</span></button>
+            <button class="act" id="aPrint" title="Print"><svg><use href="#i-print"/></svg><span class="lbl">Print</span></button>
+            <a class="act" id="aDown" title="Download PDF" download><svg><use href="#i-download"/></svg><span class="lbl">Download</span></a>
+          </div>
+        </div>
+        <div class="chips" id="chips"></div>
+      </div>
+
+      <div class="stage" id="stage">
+        <section class="page" id="home"></section>
+        <section class="page" id="section"></section>
+        <div class="pdfwrap" id="pdfwrap">
+          <div class="pdf-loading" id="pdfLoading"><div><div class="spinner"></div><p>Loading document…</p></div></div>
+          <div class="pv" id="pv" hidden>
+            <div class="pv-bar" role="toolbar" aria-label="PDF viewer">
+              <button class="pv-b" id="pvPrev" title="Previous page" aria-label="Previous page"><svg style="transform:rotate(90deg)"><use href="#i-left"/></svg></button>
+              <span class="pv-pg"><input id="pvPage" type="number" min="1" value="1" aria-label="Page number"> <span>/</span> <span id="pvTotal">1</span></span>
+              <button class="pv-b" id="pvNext" title="Next page" aria-label="Next page"><svg style="transform:rotate(90deg)"><use href="#i-right"/></svg></button>
+              <span class="pv-sep"></span>
+              <button class="pv-b" id="pvOut" title="Zoom out" aria-label="Zoom out"><svg><use href="#i-minus"/></svg></button>
+              <span class="pv-zoom" id="pvZoom">100%</span>
+              <button class="pv-b" id="pvIn" title="Zoom in" aria-label="Zoom in"><svg><use href="#i-plus"/></svg></button>
+              <button class="pv-b wide" id="pvFit" title="Fit to width"><svg><use href="#i-fitw"/></svg><span>Fit width</span></button>
+            </div>
+            <div class="pv-scroll" id="pvScroll" tabindex="0"><div class="pv-pages" id="pvPages"></div></div>
+          </div>
+          <iframe id="frame" title="Help document" name="myIframe"></iframe>
+        </div>
+        <div class="reader" id="reader">
+          <div class="rv-wrap">
+            <div class="rv-body" id="rvBody"></div>
+            <aside class="rv-toc" id="rvToc" aria-label="On this page"></aside>
+          </div>
+        </div>
+        <div class="pdf-missing" id="pdfMissing" hidden></div>
+      </div>
+    </main>
+  </div>
+
+  <div class="toast" id="toast" role="status"></div>
+  <script src="js/app.js?v=7.0.32"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+# Python packages for the CONTENT TOOLS only (webapp/tools/build_html.py). The web application itself needs none.
+#   pip install -r requirements.txt
+# Not pinned: after a successful UAT run, record the exact versions with  pip freeze  and pin them here.
+pymupdf
+pillow
+
+# Optional - only to build the one-page documentation (python scripts/build_docs_html.py)
+markdown
+
+# Optional - only to build the deployment checklist workbook (python scripts/build_checklist_xlsx.py)
+openpyxl

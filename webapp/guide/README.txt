@@ -1,0 +1,3 @@
+Put the V7 Guide PDFs here, named exactly as the topic file, e.g. AboutLighthouseERP.pdf, Glossary.pdf,
+Concepts.pdf, Lighthouse.pdf (Getting started), GSTR-1.pdf ...
+Until a file exists, that Guide topic opens the "Document not available" page.
